@@ -1,16 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import MainLayout from "./layouts/MainLayout";
+
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Gallery from "./pages/Gallery";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <div className="min-h-screen bg-orange-50 flex items-center justify-center">
-      <h1 className="text-5xl font-bold text-orange-600">
-        HawanPooja Booking
-      </h1>
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+
+          <Route path="/about" element={<About />} />
+
+          <Route path="/services" element={<Services />} />
+
+          <Route path="/gallery" element={<Gallery />} />
+
+          <Route path="/blog" element={<Blog />} />
+
+          <Route path="/contact" element={<Contact />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
