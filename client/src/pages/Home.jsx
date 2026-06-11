@@ -1,16 +1,26 @@
 import HeroSlider from "../components/HeroSlider";
 import ServicesSection from "../components/ServicesSection";
+import TempleIntro from "../components/TempleIntro";
+import StatsSection from "../components/StatsSection";
+import TestimonialsSection from "../components/TestimonialsSection";
+import OnlineHawan from "../components/OnlineHawan";
+
+
+
 function Home() {
   return (
     <>
       <HeroSlider />
       <ServicesSection />
+      <TempleIntro />
 
-      <section className="py-20 text-center">
-        <h2 className="text-4xl font-bold">
-          Welcome To HawanPooja Booking
-        </h2>
-      </section>
+      <StatsSection />
+
+      <OnlineHawan />
+
+      <TestimonialsSection />
+
+     
     </>
   );
 }
