@@ -8,6 +8,7 @@ import Services from "./pages/Services";
 import Gallery from "./pages/Gallery";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import BookingPage from "./pages/BookingPage";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
           <Route path="/blog" element={<Blog />} />
 
           <Route path="/contact" element={<Contact />} />
+
+          <Route path="/booking" element={<BookingPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

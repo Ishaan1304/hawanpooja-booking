@@ -1,7 +1,11 @@
+import AboutTemple from "../components/AboutTemple";
+import HeroBanner from "../components/HeroBanner";
+
 function About() {
   return (
-    <div className="p-10 text-4xl font-bold">
-      About Page
+    <div className="text-4xl font-bold">
+      <HeroBanner/>
+      <AboutTemple/>
     </div>
   );
 }

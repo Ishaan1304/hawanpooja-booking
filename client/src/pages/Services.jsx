@@ -1,7 +1,10 @@
+import ServicesSection from "../components/ServicesSection"
+
+
 function Services() {
   return (
-    <div className="p-10 text-4xl font-bold">
-      Services Page
+    <div className="text-4xl font-bold">
+    <ServicesSection/>
     </div>
   );
 }

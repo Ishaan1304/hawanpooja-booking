@@ -8,7 +8,7 @@ function MainLayout() {
     <>
       <Header />
 
-      <main>
+      <main >
         <Outlet />
       </main>
 

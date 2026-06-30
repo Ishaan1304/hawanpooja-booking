@@ -50,9 +50,9 @@ function OnlineHawan() {
                 पूजा बुक करें
               </button>
 
-              <button className="border border-white text-white px-8 py-4 rounded-full">
+              {/* <button className="border border-white text-white px-8 py-4 rounded-full">
                 लाइव देखें
-              </button>
+              </button> */}
             </div>
           </motion.div>
 
