@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-
 import {
   FaPhoneAlt,
   FaSearch,
@@ -150,15 +149,14 @@ function Header() {
               {/* Right Icons */}
               <div className="hidden lg:flex items-center gap-6 text-white text-2xl">
                 
-                {/* Search */}
-                <button className="hover:text-yellow-400 transition duration-300 hover:scale-110">
-                  <FaSearch />
-                </button>
+               
 
                 {/* Book Button */}
+                <Link to='/booking'>
                 <button className="bg-yellow-500 hover:bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold transition duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(245,197,66,0.5)]">
                   पूजा बुक करें
                 </button>
+                </Link>
               </div>
 
               {/* Mobile Menu Button */}

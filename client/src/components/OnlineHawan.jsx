@@ -1,5 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function OnlineHawan() {
   return (
@@ -46,9 +47,11 @@ function OnlineHawan() {
             </p>
 
             <div className="flex gap-4 mt-8">
+              <Link to='/booking'>
               <button className="bg-yellow-500 text-black px-8 py-4 rounded-full font-semibold">
                 पूजा बुक करें
               </button>
+              </Link>
 
               {/* <button className="border border-white text-white px-8 py-4 rounded-full">
                 लाइव देखें

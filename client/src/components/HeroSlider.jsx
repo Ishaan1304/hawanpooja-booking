@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { Link } from "react-router-dom";
 import {
   Navigation,
   Pagination,
@@ -176,9 +176,11 @@ function HeroSlider() {
                     </p>
 
                     <div className="flex flex-wrap gap-5">
-                      <button className="bg-yellow-500 hover:bg-yellow-400 text-black px-8 py-4 rounded-full font-semibold text-lg transition duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(245,197,66,0.6)]">
+                      <Link to="/booking">
+                        <button className="bg-yellow-500 hover:bg-yellow-400 text-black px-8 py-4 rounded-full font-semibold text-lg transition duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(245,197,66,0.6)]">
                         पूजा बुक करें
-                      </button>
+                        </button>
+                      </Link>
 
                       <button
                         onClick={scrollToServices}
