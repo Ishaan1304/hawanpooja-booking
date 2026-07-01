@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import templeImage from "../assets/temple.jpg";
+import { Link } from "react-router-dom";
 
 function TempleIntro() {
   return (
@@ -124,13 +125,16 @@ function TempleIntro() {
 
             {/* Buttons */}
             <div className="flex flex-wrap gap-5">
+              <Link to='/about'>
               <button className="bg-yellow-500 hover:bg-yellow-400 text-black px-8 py-4 rounded-full font-semibold transition duration-500 hover:scale-105">
                 और जानें
               </button>
-
+              </Link>
+              <Link to='/booking'>
               <button className="border border-white text-white hover:bg-white hover:text-black px-8 py-4 rounded-full font-semibold transition duration-500 hover:scale-105">
                 पूजा बुक करें
               </button>
+              </Link>
             </div>
           </motion.div>
 
