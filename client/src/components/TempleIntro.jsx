@@ -54,7 +54,7 @@ function TempleIntro() {
           >
             {/* Badge */}
             <div className="inline-block bg-yellow-500/10 border border-yellow-400/30 px-5 py-2 rounded-full text-yellow-400 mb-6">
-              🔱 माँ बगलामुखी साधक - सुरजगुरु शर्मा
+              🔱 माँ बगलामुखी साधक - दीपक शर्मा
             </div>
 
             {/* Heading */}
