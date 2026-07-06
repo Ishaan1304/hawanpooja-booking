@@ -72,7 +72,7 @@ function Header() {
             <div className="flex items-center justify-between h-14">
               
               {/* Translate Button */}
-              <button className="bg-yellow-500 hover:bg-yellow-400 transition-all duration-300 hover:scale-105 px-4 py-2 rounded-full flex items-center gap-2 text-black font-medium shadow-lg hover:shadow-yellow-400/40">
+              <button  className="bg-yellow-500 hover:bg-yellow-400 transition-all duration-300 hover:scale-105 px-4 py-2 rounded-full flex items-center gap-2 text-black font-medium shadow-lg hover:shadow-yellow-400/40">
                 <FaGlobe />
                 Translate
               </button>

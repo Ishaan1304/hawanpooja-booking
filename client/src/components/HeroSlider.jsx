@@ -110,7 +110,7 @@ function HeroSlider() {
   };
 
   return (
-    <section className="w-full min-h-screen">
+    <section className="w-full min-h-screen pt-[136px]">
       <Swiper
         modules={[
           Navigation,
@@ -131,7 +131,7 @@ function HeroSlider() {
           disableOnInteraction: false,
         }}
         loop={true}
-        className="w-full h-screen"
+        className="w-full h-[calc(100vh-136px)]"
       >
         {slides.map((slide, index) => (
           <SwiperSlide
@@ -144,7 +144,7 @@ function HeroSlider() {
               <img
                 src={slide.image}
                 alt={slide.title}
-                className="w-full h-full object-cover object-center animate-[slowZoom_8s_linear_infinite]"
+                className="w-full h-full object-contain object-center bg-black animate-[slowZoom_8s_linear_infinite]"
               />
 
               {/* Dark Overlay */}

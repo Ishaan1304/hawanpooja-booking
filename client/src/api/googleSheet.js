@@ -10,6 +10,7 @@ export async function saveBooking(formData) {
     body: JSON.stringify({
       ...formData,
       payment: "Pending",
+      type: "booking",
     }),
   });
 
