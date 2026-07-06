@@ -1,7 +1,9 @@
+import ContactSection from "../components/ContactSection";
+
 function Blog() {
   return (
-    <div className="p-10 text-4xl font-bold">
-      Blog Page
+    <div className="text-4xl font-bold">
+      <ContactSection/>
     </div>
   );
 }
