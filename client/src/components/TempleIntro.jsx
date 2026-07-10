@@ -8,9 +8,13 @@ function TempleIntro() {
     <section className="relative overflow-hidden bg-[#021B49] py-24">
       
       {/* Glow Effects */}
-      <div className="absolute top-10 left-10 w-72 h-72 bg-yellow-500/10 rounded-full blur-3xl"></div>
+      {/* <div className="absolute top-10 left-10 w-72 h-72 bg-yellow-500/10 rounded-full blur-3xl"></div>
 
-      <div className="absolute bottom-10 right-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-10 right-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div> */}
+
+      <div className="absolute top-10 left-10 w-72 h-72 bg-yellow-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+<div className="absolute bottom-10 right-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
 
       {/* Mandala Watermark */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 opacity-5 text-[500px] text-yellow-400 font-bold pointer-events-none">
