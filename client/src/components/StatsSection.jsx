@@ -17,7 +17,7 @@ const stats = [
   },
   {
     icon: <FaAward />,
-    number: 20,
+    number: 10,
     suffix: "+",
     title: "वर्षों का अनुभव",
   },

@@ -125,9 +125,9 @@ function Header() {
 
               {/* Logo */}
               <Link to="/" className="flex items-center group">
-                <h1 className="text-4xl lg:text-5xl font-extrabold text-yellow-400 transition duration-500 group-hover:scale-105">
-                  Deepak
-                  <span className="text-white">ji</span>
+                <h1 className="text-3xl lg:text-4xl font-extrabold text-yellow-400 transition duration-500 group-hover:scale-105">
+                  आचार्य पंडित 
+                  <span className="text-white"> दीपक शास्त्री</span>
                 </h1>
               </Link>
 
