@@ -101,7 +101,7 @@ function TempleIntro() {
             <div className="grid grid-cols-3 gap-6 mb-10">
               <div>
                 <h3 className="text-yellow-400 text-3xl font-bold">
-                  20+
+                  10+
                 </h3>
                 <p className="text-gray-300">
                   वर्षों का अनुभव

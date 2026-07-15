@@ -13,10 +13,10 @@ function BookingForm() {
     date: "",
     time: "",
     message: "",
+    package: "",
   });
 
   const timeSlots = [
-    "06:00 AM",
     "07:00 AM",
     "08:00 AM",
     "09:00 AM",
@@ -30,6 +30,9 @@ function BookingForm() {
     "06:00 PM",
     "07:00 PM",
     "08:00 PM",
+    "09:00 PM",
+    "10:00 PM",
+
   ];
 
   const [errors, setErrors] = useState({});
@@ -78,6 +81,9 @@ function BookingForm() {
 
     if (!formData.time)
       newErrors.time = "Select booking time";
+
+    if (!formData.package)
+      newErrors.package = "Please select a package";
 
     setErrors(newErrors);
 
@@ -204,9 +210,55 @@ if (result.success) {
               <option>गृह शांति पूजा</option>
               <option>कोर्ट केस विजय पूजा</option>
               <option>शत्रु विजय पूजा</option>
+              <option>पितृ दोष निवारण</option>
+              <option>कालसर्पदोष पूजा</option>
+              <option>मंगल दोष भात पूजा</option>
+              <option>कुंडली मिलान</option>
+              <option>वास्तु दोष शांति</option>
+              <option>दांपत्य में आ रही बाधाएँ समाप्त होती हैं।</option>
+              <option>राजनीति में विजय </option>
             </select>
 
             <p className="text-red-400 text-sm mt-1">{errors.pooja}</p>
+
+            <div className="mt-6">
+  <select
+    name="package"
+    value={formData.package}
+    onChange={handleChange}
+    className={inputClass}
+  >
+    <option value="">Select Package</option>
+
+    <option value="सामान्य (45 मिनट - ₹350)">
+      🟢 सामान्य (45 मिनट - ₹350)
+    </option>
+
+    <option value="विशेष (1 घंटा 30 मिनट - ₹500)">
+      🟡 विशेष (1 घंटा 30 मिनट - ₹500)
+    </option>
+
+    <option value="महाविशेष (2 घंटे - ₹700)">
+      🔴 महाविशेष (2 घंटे - ₹700)
+    </option>
+  </select>
+
+  <p className="text-red-400 text-sm mt-1">
+    {errors.package}
+  </p>
+</div>
+
+{formData.package && (
+  <div className="mt-5 rounded-2xl border border-yellow-400/30 bg-yellow-400/10 p-4">
+    <h3 className="text-yellow-400 font-semibold">
+      Selected Package
+    </h3>
+
+    <p className="text-white mt-2">
+      {formData.package}
+    </p>
+  </div>
+)}
 
 
             {/* Date */}
