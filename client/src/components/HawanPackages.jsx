@@ -7,7 +7,7 @@ const packages = [
         id: 1,
         title: "सामान्य हवन",
         duration: "45 मिनट",
-        price: "₹350",
+        price: "₹2100",
         badge: "",
         color: "from-yellow-500 to-orange-500",
         details: [
@@ -23,7 +23,7 @@ const packages = [
         id: 2,
         title: "विशेष हवन",
         duration: "1 घंटा 30 मिनट",
-        price: "₹500",
+        price: "₹5100",
         badge: "Most Popular",
         color: "from-orange-500 to-red-500",
         details: [
@@ -39,7 +39,7 @@ const packages = [
         id: 3,
         title: "महाविशेष हवन",
         duration: "2 घंटे",
-        price: "₹700",
+        price: "₹11000",
         badge: "",
         color: "from-red-500 to-pink-500",
         details: [
@@ -254,7 +254,7 @@ function HawanPackages() {
                                     ["पूर्ण वैदिक विधि", "✖", "✔", "✔"],
                                     ["घर / मंदिर", "✔", "✔", "✔"],
                                     ["समय", "45 मिनट", "1.5 घंटा", "2 घंटे"],
-                                    ["मूल्य", "₹350", "₹500", "₹700"],
+                                    ["मूल्य", "₹2100", "₹5100", "₹11000"],
                                 ].map((row, index) => (
                                     <tr
                                         key={index}
