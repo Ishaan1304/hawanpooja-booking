@@ -113,14 +113,18 @@ function Footer() {
         <div className="flex justify-center gap-6 py-10">
 
           <a
-            href="#"
+            href="https://www.facebook.com/share/1U7A63o7sM/"
+            target="_blank"
+  rel="noopener noreferrer"
             className="h-12 w-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-yellow-500 hover:text-black transition"
           >
             <FaFacebookF />
           </a>
 
           <a
-            href="#"
+            href="https://www.instagram.com/pandit_deepak_shastri_4?igsh=ZjBieWJlM2Y5azdl"
+            target="_blank"
+  rel="noopener noreferrer"
             className="h-12 w-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-yellow-500 hover:text-black transition"
           >
             <FaInstagram />
@@ -128,13 +132,17 @@ function Footer() {
 
           <a
             href="#"
+            target="_blank"
+  rel="noopener noreferrer"
             className="h-12 w-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-yellow-500 hover:text-black transition"
           >
             <FaYoutube />
           </a>
 
           <a
-            href="#"
+            href="https://wa.me/91747056733"
+            target="_blank"
+  rel="noopener noreferrer"
             className="h-12 w-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-yellow-500 hover:text-black transition"
           >
             <FaWhatsapp />

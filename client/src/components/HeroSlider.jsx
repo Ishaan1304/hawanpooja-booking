@@ -14,7 +14,7 @@ import "swiper/css/effect-fade";
 
 import slider1 from "../assets/slider/slider1.jpeg";
 import slider2 from "../assets/slider/slider2.jpeg";
-import slider3 from "../assets/slider/slider3.jpeg";
+import slider3 from "../assets/slider/slider3.png";
 import slider4 from "../assets/slider/slider4.jpeg";
 import slider5 from "../assets/slider/slider5.jpeg";
 import slider6 from "../assets/slider/slider6.jpeg";
