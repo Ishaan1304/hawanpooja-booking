@@ -7,15 +7,20 @@ const packages = [
         id: 1,
         title: "सामान्य हवन",
         duration: "45 मिनट",
-        price: "₹2100",
+        price: "₹2,100",
+        receipt: "₹350",
+        total: "₹2,450",
         badge: "",
         color: "from-yellow-500 to-orange-500",
+        description:
+            "सामान्य धार्मिक कार्यों, गृह शांति एवं सकारात्मक ऊर्जा के लिए उपयुक्त।",
         details: [
             "सम्पूर्ण पूजा विधि",
             "अनुभवी पंडित जी",
             "सामान्य हवन सामग्री",
             "45 मिनट का अनुष्ठान",
             "घर या मंदिर में पूजा",
+            "रसीद शुल्क: ₹350",
         ],
     },
 
@@ -23,15 +28,20 @@ const packages = [
         id: 2,
         title: "विशेष हवन",
         duration: "1 घंटा 30 मिनट",
-        price: "₹5100",
+        price: "₹5,100",
+        receipt: "₹500",
+        total: "₹5,600",
         badge: "Most Popular",
         color: "from-orange-500 to-red-500",
+        description:
+            "व्यापार, सफलता, गृह दोष निवारण एवं विशेष मनोकामनाओं हेतु।",
         details: [
             "21 प्रकार की विशेष आहुति",
-            "सम्पूर्ण सामग्री",
+            "सम्पूर्ण हवन सामग्री",
             "विशेष विधि-विधान",
             "पंडित जी द्वारा मार्गदर्शन",
             "शुभ कार्य हेतु उपयुक्त",
+            "रसीद शुल्क: ₹500",
         ],
     },
 
@@ -39,18 +49,24 @@ const packages = [
         id: 3,
         title: "महाविशेष हवन",
         duration: "2 घंटे",
-        price: "₹11000",
+        price: "₹11,000",
+        receipt: "₹700",
+        total: "₹11,700",
         badge: "",
         color: "from-red-500 to-pink-500",
+        description:
+            "विशेष साधना, बाधा निवारण एवं महत्वपूर्ण धार्मिक अनुष्ठानों के लिए।",
         details: [
             "36 प्रकार की विशेष आहुति",
-            "सम्पूर्ण सामग्री",
+            "सम्पूर्ण हवन सामग्री",
             "पूर्ण वैदिक अनुष्ठान",
             "विशेष पूजा एवं हवन",
             "विशेष मनोकामना हेतु",
+            "रसीद शुल्क: ₹700",
         ],
     },
 ];
+
 
 function HawanPackages() {
     const [activeCard, setActiveCard] = useState(null);
@@ -133,28 +149,49 @@ function HawanPackages() {
                                         </div>
                                     )}
 
-                                    
+
 
                                     <div className="p-8">
 
-                                        <h3 className="text-3xl font-bold text-white mb-4">
+                                        <h3 className="text-3xl font-bold text-white mb-3">
                                             {pkg.title}
                                         </h3>
 
-                                        <p className="text-gray-300 mb-2">
-                                            अवधि
+                                        <p className="text-gray-300 text-sm leading-6 mb-5">
+                                            {pkg.description}
                                         </p>
 
-                                        <p className="text-yellow-400 text-2xl font-semibold mb-8">
-                                            {pkg.duration}
-                                        </p>
+                                        <div className="space-y-3 mb-6">
 
-                                        <div className="text-5xl font-bold text-white mb-10">
-                                            {pkg.price}
+                                            <div className="flex justify-between text-gray-300">
+                                                <span>अवधि</span>
+                                                <span>{pkg.duration}</span>
+                                            </div>
+
+                                            <div className="flex justify-between text-gray-300">
+                                                <span>हवन शुल्क</span>
+                                                <span>{pkg.price}</span>
+                                            </div>
+
+                                            <div className="flex justify-between text-gray-300">
+                                                <span>रसीद शुल्क</span>
+                                                <span>{pkg.receipt}</span>
+                                            </div>
+
+                                            <div className="border-t border-white/10 pt-3 flex justify-between">
+                                                <span className="font-semibold text-yellow-400">
+                                                    कुल राशि
+                                                </span>
+
+                                                <span className="text-3xl font-bold text-yellow-400">
+                                                    {pkg.total}
+                                                </span>
+                                            </div>
+
                                         </div>
 
                                         <button className="w-full py-4 rounded-xl bg-yellow-400 text-black font-bold hover:scale-105 transition">
-                                            विवरण देखें →
+                                            पूरी जानकारी देखें →
                                         </button>
 
                                     </div>
@@ -164,7 +201,7 @@ function HawanPackages() {
                                 {/* Back */}
                                 <div className="absolute inset-0 rounded-3xl bg-[#08275E] border border-yellow-400/30 p-8 [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col">
 
-                                    <h3 className="text-3xl font-bold text-yellow-400 mb-8">
+                                    <h3 className="text-xl font-bold text-yellow-400 ">
                                         {pkg.title}
                                     </h3>
 
@@ -173,7 +210,7 @@ function HawanPackages() {
                                         {pkg.details.map((item) => (
                                             <div
                                                 key={item}
-                                                className="flex items-start gap-3"
+                                                className="flex items-start gap-1"
                                             >
                                                 <span className="text-yellow-400 mt-1">
                                                     ✔
@@ -188,7 +225,7 @@ function HawanPackages() {
                                     </div>
 
                                     <Link to="/booking">
-                                        <button className="mt-8 w-full py-4 rounded-xl bg-yellow-400 text-black font-bold hover:scale-105 transition">
+                                        <button className="mt-4 w-full py-4 rounded-xl bg-yellow-400 text-black font-bold hover:scale-105 transition">
                                             अभी बुक करें
                                         </button>
                                     </Link>
@@ -254,7 +291,7 @@ function HawanPackages() {
                                     ["पूर्ण वैदिक विधि", "✖", "✔", "✔"],
                                     ["घर / मंदिर", "✔", "✔", "✔"],
                                     ["समय", "45 मिनट", "1.5 घंटा", "2 घंटे"],
-                                    ["मूल्य", "₹2100", "₹5100", "₹11000"],
+                                    ["मूल्य", "₹2100 + ₹350", "₹5100 + ₹500", "₹11000 + ₹700"],
                                 ].map((row, index) => (
                                     <tr
                                         key={index}
@@ -264,8 +301,8 @@ function HawanPackages() {
                                             <td
                                                 key={i}
                                                 className={`py-5 px-6 ${i === 0
-                                                        ? "text-left font-semibold text-yellow-300"
-                                                        : ""
+                                                    ? "text-left font-semibold text-yellow-300"
+                                                    : ""
                                                     }`}
                                             >
                                                 {item}
