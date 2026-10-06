@@ -4,6 +4,7 @@ import TempleIntro from "../components/TempleIntro";
 import StatsSection from "../components/StatsSection";
 import TestimonialsSection from "../components/TestimonialsSection";
 import OnlineHawan from "../components/OnlineHawan";
+import HawanPackages from "../components/HawanPackages";
 
 
 
@@ -13,7 +14,7 @@ function Home() {
       <HeroSlider />
       <ServicesSection />
       <TempleIntro />
-
+      <HawanPackages />
       <StatsSection />
 
       <OnlineHawan />

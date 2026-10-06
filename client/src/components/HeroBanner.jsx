@@ -63,7 +63,7 @@ function HeroBanner() {
             <div className="grid grid-cols-3 gap-6 mb-10">
 
               <div className="text-center bg-white/10 rounded-xl p-5 backdrop-blur">
-                <h3 className="text-3xl font-bold text-yellow-400">20+</h3>
+                <h3 className="text-3xl font-bold text-yellow-400">10+</h3>
                 <p className="text-gray-300 text-sm">वर्षों का अनुभव</p>
               </div>
 

@@ -11,6 +11,8 @@ import {
 
 import { Link, NavLink } from "react-router-dom";
 
+import { changeLanguage } from "../utils/translate";
+
 const navLinks = [
   { name: "होम", path: "/" },
   { name: "हमारे बारे में", path: "/about" },
@@ -26,6 +28,8 @@ function Header() {
   const [showHeader, setShowHeader] = useState(true);
 
   const [lastScrollY, setLastScrollY] = useState(0);
+
+  const [language, setLanguage] = useState("hi");
 
   // Hide Header On Scroll Down
   useEffect(() => {
@@ -72,10 +76,25 @@ function Header() {
             <div className="flex items-center justify-between h-14">
               
               {/* Translate Button */}
-              <button className="bg-yellow-500 hover:bg-yellow-400 transition-all duration-300 hover:scale-105 px-4 py-2 rounded-full flex items-center gap-2 text-black font-medium shadow-lg hover:shadow-yellow-400/40">
+              {/* <button  className="bg-yellow-500 hover:bg-yellow-400 transition-all duration-300 hover:scale-105 px-4 py-2 rounded-full flex items-center gap-2 text-black font-medium shadow-lg hover:shadow-yellow-400/40">
                 <FaGlobe />
                 Translate
-              </button>
+              </button> */}
+
+              <button
+  onClick={() => {
+    const newLang = language === "hi" ? "en" : "hi";
+
+    changeLanguage(newLang);
+
+    setLanguage(newLang);
+  }}
+  className="bg-yellow-500 hover:bg-yellow-400 px-4 py-2 rounded-full flex items-center gap-2 text-black font-medium"
+>
+  <FaGlobe />
+
+  {language === "hi" ? "English" : "हिन्दी"}
+</button>
 
               {/* Desktop Contact */}
               <div className="hidden lg:flex items-center gap-8 text-sm">
@@ -106,9 +125,9 @@ function Header() {
 
               {/* Logo */}
               <Link to="/" className="flex items-center group">
-                <h1 className="text-4xl lg:text-5xl font-extrabold text-yellow-400 transition duration-500 group-hover:scale-105">
-                  Deepak
-                  <span className="text-white">ji</span>
+                <h1 className="text-3xl lg:text-4xl font-extrabold text-yellow-400 transition duration-500 group-hover:scale-105">
+                  आचार्य पंडित 
+                  <span className="text-white"> दीपक शास्त्री</span>
                 </h1>
               </Link>
 

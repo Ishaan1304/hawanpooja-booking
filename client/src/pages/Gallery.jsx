@@ -1,7 +1,9 @@
+import GallerySection from "../components/GallerySection";
+
 function Gallery() {
   return (
-    <div className="p-10 text-4xl font-bold">
-      Gallery Page
+    <div className="text-4xl font-bold">
+      <GallerySection />
     </div>
   );
 }
