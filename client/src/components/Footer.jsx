@@ -140,9 +140,8 @@ function Footer() {
           </a>
 
           <a
-            href="https://wa.me/91747056733"
+            href="https://wa.me/917470567335"
             target="_blank"
-  rel="noopener noreferrer"
             className="h-12 w-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-yellow-500 hover:text-black transition"
           >
             <FaWhatsapp />
